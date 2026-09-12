@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloud Notes App</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>☁️ Cloud Notes</h1>
+      <p class="subtitle">Deployed on AWS EC2</p>
+    </header>
+
+    <form id="note-form">
+      <input type="text" id="title" placeholder="Note title" required />
+      <textarea id="content" placeholder="Write something..." rows="3"></textarea>
+      <button type="submit" id="submit-btn">Add Note</button>
+      <button type="button" id="cancel-btn" class="hidden">Cancel</button>
+    </form>
+
+    <div id="notes-list" class="notes-list"></div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
